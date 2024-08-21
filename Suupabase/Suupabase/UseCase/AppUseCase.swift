@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+protocol AppUseCase {
+  var supabaseService: SupabaseUseCase { get }
+}
+
+// MARK: - Service
+struct AppService: AppUseCase {
+  let supabaseService: SupabaseUseCase
+  
+  init() {
+    let supabaseRepository = SupabaseRepository()
+    self.supabaseService = SupabaseService(supabaseRepository: supabaseRepository)
+  }
+}

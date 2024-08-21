@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct SuupabaseApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @State private var container = DIContainer(
+    appService: AppService()
+  )
+  
+  // MARK: - Body
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environment(container)
     }
+  }
 }
