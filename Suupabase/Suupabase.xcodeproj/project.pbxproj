@@ -14,6 +14,12 @@
 		7E72BA3D2C761684004FEC61 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 7E72BA3C2C761684004FEC61 /* Functions */; };
 		7E72BA3F2C761684004FEC61 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 7E72BA3E2C761684004FEC61 /* PostgREST */; };
 		7E72BA412C761684004FEC61 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 7E72BA402C761684004FEC61 /* Storage */; };
+		7E72BA442C761745004FEC61 /* SupabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72BA432C761745004FEC61 /* SupabaseRepository.swift */; };
+		7E72BA482C761852004FEC61 /* Bundle+Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72BA472C761852004FEC61 /* Bundle+Secret.swift */; };
+		7E72BA4B2C761922004FEC61 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7E72BA4A2C761922004FEC61 /* Supabase */; };
+		7E72BA4E2C761CF7004FEC61 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72BA4D2C761CF7004FEC61 /* DIContainer.swift */; };
+		7E72BA522C761D68004FEC61 /* SupabaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72BA512C761D68004FEC61 /* SupabaseUseCase.swift */; };
+		7E72BA542C761E17004FEC61 /* AppUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72BA532C761E17004FEC61 /* AppUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		7E72BA302C76012F004FEC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E72BA332C76012F004FEC61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E72BA3A2C7614E9004FEC61 /* SECRET.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SECRET.xcconfig; sourceTree = "<group>"; };
+		7E72BA432C761745004FEC61 /* SupabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseRepository.swift; sourceTree = "<group>"; };
+		7E72BA452C761835004FEC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7E72BA472C761852004FEC61 /* Bundle+Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Secret.swift"; sourceTree = "<group>"; };
+		7E72BA4D2C761CF7004FEC61 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		7E72BA512C761D68004FEC61 /* SupabaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseUseCase.swift; sourceTree = "<group>"; };
+		7E72BA532C761E17004FEC61 /* AppUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E72BA4B2C761922004FEC61 /* Supabase in Frameworks */,
 				7E72BA412C761684004FEC61 /* Storage in Frameworks */,
 				7E72BA3F2C761684004FEC61 /* PostgREST in Frameworks */,
 				7E72BA3D2C761684004FEC61 /* Functions in Frameworks */,
@@ -45,6 +58,7 @@
 				7E72BA3A2C7614E9004FEC61 /* SECRET.xcconfig */,
 				7E72BA2B2C76012D004FEC61 /* Suupabase */,
 				7E72BA2A2C76012D004FEC61 /* Products */,
+				7E72BA492C761922004FEC61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,8 +73,12 @@
 		7E72BA2B2C76012D004FEC61 /* Suupabase */ = {
 			isa = PBXGroup;
 			children = (
+				7E72BA452C761835004FEC61 /* Info.plist */,
 				7E72BA2C2C76012D004FEC61 /* SuupabaseApp.swift */,
 				7E72BA2E2C76012D004FEC61 /* ContentView.swift */,
+				7E72BA422C761733004FEC61 /* Repositories */,
+				7E72BA4C2C761CF2004FEC61 /* Shared */,
+				7E72BA502C761D61004FEC61 /* UseCase */,
 				7E72BA302C76012F004FEC61 /* Assets.xcassets */,
 				7E72BA322C76012F004FEC61 /* Preview Content */,
 			);
@@ -73,6 +91,47 @@
 				7E72BA332C76012F004FEC61 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E72BA422C761733004FEC61 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7E72BA432C761745004FEC61 /* SupabaseRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7E72BA462C761849004FEC61 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7E72BA472C761852004FEC61 /* Bundle+Secret.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7E72BA492C761922004FEC61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E72BA4C2C761CF2004FEC61 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7E72BA462C761849004FEC61 /* Extensions */,
+				7E72BA4D2C761CF7004FEC61 /* DIContainer.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7E72BA502C761D61004FEC61 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7E72BA532C761E17004FEC61 /* AppUseCase.swift */,
+				7E72BA512C761D68004FEC61 /* SupabaseUseCase.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +154,7 @@
 				7E72BA3C2C761684004FEC61 /* Functions */,
 				7E72BA3E2C761684004FEC61 /* PostgREST */,
 				7E72BA402C761684004FEC61 /* Storage */,
+				7E72BA4A2C761922004FEC61 /* Supabase */,
 			);
 			productName = Suupabase;
 			productReference = 7E72BA292C76012D004FEC61 /* Suupabase.app */;
@@ -153,6 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E72BA442C761745004FEC61 /* SupabaseRepository.swift in Sources */,
+				7E72BA522C761D68004FEC61 /* SupabaseUseCase.swift in Sources */,
+				7E72BA482C761852004FEC61 /* Bundle+Secret.swift in Sources */,
+				7E72BA542C761E17004FEC61 /* AppUseCase.swift in Sources */,
+				7E72BA4E2C761CF7004FEC61 /* DIContainer.swift in Sources */,
 				7E72BA2F2C76012D004FEC61 /* ContentView.swift in Sources */,
 				7E72BA2D2C76012D004FEC61 /* SuupabaseApp.swift in Sources */,
 			);
@@ -291,6 +356,7 @@
 				DEVELOPMENT_TEAM = 67M6ZS7KS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Suupabase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,6 +386,7 @@
 				DEVELOPMENT_TEAM = 67M6ZS7KS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Suupabase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -387,6 +454,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7E72BA3B2C761684004FEC61 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Storage;
+		};
+		7E72BA4A2C761922004FEC61 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E72BA3B2C761684004FEC61 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
