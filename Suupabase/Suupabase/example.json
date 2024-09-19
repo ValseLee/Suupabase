@@ -1,0 +1,102 @@
+{
+  "id": 100,
+  "screen": [
+    {
+      "id": 10,
+      "stack": {
+        "id": 1,
+        "style": "vertical",
+        "layout": {
+          "width": 450,
+          "height": 200,
+          "alignment": "center"
+        },
+        "components": [
+          {
+            "id": 1,
+            "component": "Text",
+            "layout": {
+              "width": 330,
+              "height": 100,
+              "alignment": "center"
+            },
+            "property": {
+              "text": "안녕하세요",
+              "fontSize": 17,
+              "fontColor": "#000000",
+              "fontWeight": "bold",
+              "textAlignment": "center"
+            }
+          },
+          {
+            "id": 2,
+            "component": "Spacer",
+            "layout": {
+              "width": 0,
+              "height": 300
+            }
+          },
+          {
+            "id": 3,
+            "component": "Button",
+            "layout": {
+              "width": 330,
+              "height": 100,
+              "alignment": "center"
+            },
+            "property": {
+              "text": "눌러주세요",
+              "backgroundColor": "#f9eab5",
+              "cornerRadius": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "stack": {
+        "id": 4,
+        "style": "vertical",
+        "layout": {
+          "width": 450,
+          "height": 200,
+          "alignment": "center"
+        },
+        "components": [
+          {
+            "id": 5,
+            "component": "Text",
+            "layout": {
+              "width": 0,
+              "height": 300,
+              "alignment": "center"
+            },
+            "property": {
+              "text": "안녕하세요안녕하세세요",
+              "fontSize": 30,
+              "fontColor": "#000000",
+              "textAlignment": "leading",
+              "backgroundColor": "#f9eab5",
+              "cornerRadius": 20
+            }
+          },
+          {
+            "id": 6,
+            "component": "Button",
+            "layout": {
+              "width": 330,
+              "height": 100,
+              "alignment": "center"
+            },
+            "property": {
+              "text": "눌러주세요",
+              "tint": "#FF0D2A",
+              "cornerRadius": 15
+            }
+          }
+        ]
+      }
+    },
+  ]
+}
